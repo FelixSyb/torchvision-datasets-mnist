@@ -24,11 +24,11 @@
 
 ```python
 import torchvision
-train_dataset = torchvision.datasets.MNIST(root='/Users/xxx/datasets/MNIST/',
+train_dataset = torchvision.datasets.MNIST(root='/Users/xxx/datasets',
                                              train=True, 
                                              transform=transforms.ToTensor(),
                                              download=False)
-test_dataset = torchvision.datasets.MNIST(root='/Users/xxx/datasets/MNIST/', 
+test_dataset = torchvision.datasets.MNIST(root='/Users/xxx/datasets', 
                                           train=False, 
                                           transform=transforms.ToTensor(),
                                           download=False)
